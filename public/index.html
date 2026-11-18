@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7f1e4">
+<meta name="description" content="Shop MunchMillet Fiber Hood psyllium husk in six flavors.">
+<title>MunchMillet · Fiber Hood</title>
+<link rel="stylesheet" href="/style.css">
+<script type="module" src="/app.js"></script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/" aria-label="MunchMillet home">MunchMillet<span>❧</span></a>
+  <nav aria-label="Main navigation"><a href="#flavors">The collection</a><button id="track" hidden>Track order</button></nav>
+  <a class="nav-shop" href="#flavors">Shop fiber <span>↗</span></a>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">MUNCHMILLET · FIBER HOOD</p>
+      <h1>Daily fiber.<br><em>Full of flavor.</em></h1>
+      <p class="intro">Meet Fiber Hood, our psyllium husk collection in six flavors, from tangy Amla Zest to the classic Original.</p>
+      <a class="cta" href="#flavors">Explore all flavors <span>↘</span></a>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <img class="lineup" alt="" fetchpriority="high" hidden>
+      <div class="hero-tins" id="hero-tins"></div>
+      <span class="art-meta">FIBER HOOD <span>·</span> THE COLLECTION</span>
+    </div>
+  </section>
+  <div class="ribbon"><div class="ribbon-track" aria-hidden="true"></div><span class="sr">Six flavors of psyllium husk from MunchMillet.</span></div>
+  <section class="catalog" id="flavors" aria-labelledby="heading">
+    <div class="section-head">
+      <div><p class="eyebrow">THE FIBER HOOD COLLECTION</p><h2 id="heading">Find your flavor.</h2></div>
+      <p id="mode" role="status"></p>
+    </div>
+    <div class="grid" id="grid"><p role="status">Loading the collection…</p></div>
+  </section>
+</main>
+<footer><a class="brand" href="/">MunchMillet<span>❧</span></a><p>Good Gut, Real You.</p><a href="#flavors">Shop the collection ↑</a></footer>
+<dialog id="checkout" aria-labelledby="checkout-title">
+  <button class="close" id="close" aria-label="Close checkout">×</button>
+  <p class="eyebrow">MUNCHMILLET ORDER</p>
+  <h2 id="checkout-title">Checkout</h2>
+  <p id="summary"></p>
+  <form id="buyer">
+    <div class="fields">
+      <label>Full name<input name="name" autocomplete="name" maxlength="100" required></label>
+      <label>Email<input name="email" type="email" autocomplete="email" maxlength="254" required></label>
+      <label>Phone<input name="phone" type="tel" autocomplete="tel" maxlength="20" required></label>
+      <label>PIN code<input name="pin" inputmode="numeric" autocomplete="postal-code" pattern="[1-9][0-9]{5}" required></label>
+      <label class="wide">Delivery address<input name="address" autocomplete="street-address" maxlength="500" required></label>
+      <label>Quantity<input name="qty" type="number" min="1" max="10" value="1" required></label>
+    </div>
+    <button class="cta" id="pay" type="submit">Continue to payment</button>
+  </form>
+  <div id="status" aria-live="polite"></div>
+</dialog>
+</body>
+</html>
+

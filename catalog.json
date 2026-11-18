@@ -1,0 +1,8 @@
+[
+  {"sku":"beetroot","name":"Beetroot Twist","note":"Earthy and gently sweet","price":49900,"color":"#f8d9d7","ink":"#861d30"},
+  {"sku":"amla","name":"Amla Zest","note":"Bright and tangy","price":49900,"color":"#ecedcb","ink":"#545e24"},
+  {"sku":"ginger","name":"Ginger Twist","note":"Warm with a spicy kick","price":49900,"color":"#fae4bf","ink":"#874623"},
+  {"sku":"orange","name":"Citrus Orange","note":"Sunny and citrusy","price":49900,"color":"#ffe1b9","ink":"#a84916"},
+  {"sku":"cinnamon","name":"Cinnamon Spice","note":"Mellow and warmly spiced","price":49900,"color":"#eed7b9","ink":"#7b3e25"},
+  {"sku":"original","name":"Original","note":"The classic psyllium husk","price":44900,"color":"#e7ded1","ink":"#473a2f"}
+]
